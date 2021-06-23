@@ -1,0 +1,203 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-color{color: #f00;}
+.sec-color{color: #00f;}
+
+/* ----------------------------- Start section ----------------------------- */
+.todo-form
+{
+    position: relative;
+    width: 50%;
+    margin: 60px auto;
+    background-color: #fdf7f2;
+    padding: 30px 50px 100px;
+    box-shadow: 0 18px 89px 0 rgb(0 0 0 / 16%);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.todo-form h2
+{
+    color: #e91e63;
+    margin-bottom: 30px;
+}
+.todo-form form
+{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.todo-form form input:nth-child(1),input:nth-child(2),input:nth-child(3),input:nth-child(4)
+{
+    width: 250px;
+    height: 50px;
+    padding-left: 7px;
+    color: gray;
+    border: 1px solid gray;
+    display: block;
+    margin: 10px auto;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.todo-form form input:nth-child(5){
+    display: block;
+    background-color: #e91e63;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 700;
+    padding: 12px 40px;
+    margin: 30px auto;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.todo-form form input:focus
+{
+    outline: none;
+    border: none;
+    border-bottom: 1.5px solid #e91e63;
+}
+.todo-form h2
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.table-data, td, th {  
+    border: 1px solid #ddd;
+    text-align: center;
+}
+.table-data {
+    border-collapse: collapse;
+    width: 100%;
+}
+.table-data tr td i
+{
+    color: red;
+    cursor: pointer;
+}
+.table-data th
+{
+    color: #e91e63;
+}
+.table-data th, td {
+    padding: 15px;
+}
+.todo-form .btn-cls
+{
+    display: flex;
+    background-color: #e91e63;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 700;
+    padding: 12px 30px;
+    margin: 50px auto !important;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+/* start sweet alert */
+.overlay
+{
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    display: none;
+}
+.overlay .sweet-alert {
+    background-color: white;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    width: 478px;
+    height: 300px;
+    padding: 50px 40px;
+    border-radius: 5px;
+    text-align: center;
+    position: fixed;
+    overflow: hidden;
+    z-index: 99999;
+    /* transform:scale(0); */
+    animation-name: showSweetAlert;
+    animation-duration: 2s;
+    animation-delay: .1s;
+}
+.sweet-alert h2 {
+    color: #f30707;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: none;
+    position: relative;
+    margin: 25px 0;
+    padding: 0;
+    line-height: 40px;
+    display: block; }
+.sweet-alert p {
+    color: #797979;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 300;
+    position: relative;
+    text-align: inherit;
+    margin: 10;
+    padding: 0;
+    line-height: normal; 
+}
+.sweet-alert button
+{
+    background-color: #bd0404;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    padding: 12px 30px;
+    margin-top: 25px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+@keyframes showSweetAlert {
+    0% {
+        transform: scale(0);
+    }
+    45% 
+    {
+        transform: scale(1.05);
+    }
+    80% 
+    {
+        transform: scale(0.95); 
+    }
+    100% 
+    {
+        transform: scale(1);
+    } 
+}
+/* end sweet alert */
+/* ----------------------------- End section ----------------------------- */
