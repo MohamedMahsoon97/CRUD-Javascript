@@ -34,13 +34,13 @@
     display: flex;
     flex-wrap: wrap;
 }
-.todo-form form input:nth-child(1),input:nth-child(2),input:nth-child(3),input:nth-child(4)
+.todo-form form input:nth-child(1),input:nth-child(2)
 {
     width: 250px;
     height: 50px;
     padding-left: 7px;
     color: gray;
-    border: 1px solid gray;
+    border: .7px solid #d3cfcf;
     display: block;
     margin: 10px auto;
     border-radius: 4px;
@@ -49,7 +49,7 @@
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
 }
-.todo-form form input:nth-child(5){
+.todo-form form input:nth-child(3){
     display: block;
     background-color: #e91e63;
     color: #fff;
@@ -71,6 +71,33 @@
     border: none;
     border-bottom: 1.5px solid #e91e63;
 }
+.todo-form #edit-data
+{
+    display: none;
+}
+.todo-form #edit-data .edit-inp
+{
+    width: 150px;
+}
+.todo-form #edit-data #update-sub
+{
+    width: 100px;
+    padding: 12px 10px;
+    margin: 10px;
+    background-color: #3ba720;
+}
+.todo-form #edit-data a
+{
+    margin-top: 10px;
+    background-color: #e91e63;
+    width: 40px;
+    height: 50px;
+    color: #fff;
+    line-height: 50px;
+    font-size: 24px;
+    border-radius: 10px;
+    cursor: pointer;
+}
 .todo-form h2
 {
     text-align: center;
@@ -88,9 +115,11 @@
 {
     color: red;
     cursor: pointer;
+    /* margin-left: 17px; */
 }
 .table-data th
 {
+    font-size: 17px;
     color: #e91e63;
 }
 .table-data th, td {

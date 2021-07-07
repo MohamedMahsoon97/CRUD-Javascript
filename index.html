@@ -6,36 +6,42 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/all.css">
         <link rel="stylesheet" href="css/style.css">
-        <title>Todo List using es6</title>
+        <title>CRUD Javascript</title>
     </head>
 
     <body>
         <!------------------------ Start Section --------------------------->
         <section class="todo-form">
-            <h2>Todo List App</h2>
-            <form id="students-data">
-                <input type="number" placeholder="Your ID" id="id-inp">
-                <input type="text" placeholder="First Name" id="firstName-inp">
-                <input type="text" placeholder="Last Name" id="lastName-inp">
-                <input type="number" placeholder="Your Age" id="age-inp">
-                <input type="submit" value="Add New Student" id="add-new-student">
+            <h2>CRUD Javascript</h2>
+            <form id="products-data" action="javascript:void(0);" method="POST" onsubmit="app.Add()">
+                <input type="text" placeholder="Product Name" id="prod-inp">
+                <input type="text" placeholder="Product Price" id="price-inp">
+                <input type="submit" value="Add New Product" id="add-new-product">
             </form>
 
-            <h2>All Students</h2>
-            <table class="table-data" id="students">
+            <h2>All Products</h2>
+            
+            <table class="table-data" id="products">
                 <thead>
                     <tr>
-                        <th>ID</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Age</th>
-                        <th>Delete</th>
+                        <th>Product Name</th>
+                        <th>Product Price</th>
+                        <th colspan="2">Edit & Delete</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="product">
                     
                 </tbody>
             </table>
+
+            <div id="edit-data" role="aria-hidden">
+                <form action="javascript:void(0);" method="POST" id="update-edit">
+                    <input class="edit-inp" type="text" id="edit-todo1">
+                    <input class="edit-inp" type="text" id="edit-todo2">
+                    <input id="update-sub" type="submit" value="Update">
+                    <a onclick="app.CloseInput()" aria-label="Close" title="close">&#10006;</a>
+                </form>
+            </div>
 
             <div id="cls-btn">
                 <!-- <button class="btn-cls" id="clearAll-btn" onclick="DeleteAllStudents()">Clear all</button> -->
@@ -44,12 +50,12 @@
 
         <div id="sweet-alert" class="overlay">
             <div class="sweet-alert">
-                <h2>Invalid data</h2>
-                <p>Data not found Plz fill inputs</p>
+                <h2>Data not found</h2>
+                <p>Invalid Data Plz add product data</p>
                 <button id="hide-sweet">OK</button>
             </div>
         </div>
         <!------------------------ End Section ----------------------------->
-        <script src="js/script.js"></script>
+        <script type="text/javascript" src="js/script.js" defer></script>
     </body>
 </html>
